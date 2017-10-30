@@ -1,0 +1,11 @@
+{
+  "name": "pug-gif",
+  "version": "1.0.0",
+  "description": "A app that displays all the greatest pug gifs from Giphy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Justin Rich",
+  "license": "MIT"
+}
