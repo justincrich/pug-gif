@@ -9,7 +9,7 @@
 require('./css/main.css');
 import Vue from 'vue';
 import moment from 'moment';
-import axios from 'axios';
+
 
 var app = new Vue({
     el:'#app',
