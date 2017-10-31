@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pug Gif</title>
+    <script src="https://use.typekit.net/yvm7tvs.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+
+  </head>
+
+
+  <!-- 
+
+
+                    <div class="card-body">
+                            <div class="user_information">
+                                    <div class="user_img_holder">
+                                        <img :src="image.user.avatar_url" class='rounded'/>
+                                    </div>
+                                    <span class="display_name">{{image.user.display_name}}</span>
+                            </div>
+                            <small class="created_date text-muted">
+                                {{image.import_datetime|formatDate}}
+                            </small>
+                            
+                    </div>
+
+   -->
+  <body >
+    <div id="app">
+            <nav class="navbar navbar-light bg-light mb-2">
+                    <span  class="navbar-brand mb-0 h1">PugGif</span>
+            </nav>
+            <div v-cloak class="container">
+       
+                    <div v-for="image in images" :id="image.id" 
+                        class="card"
+                    >
+                        <a class='card_head_container' :href="image.url">
+                                <div 
+                                    class='card_image'
+                                    :style=
+                                    "{background:
+                                        'linear-gradient( 0deg, black, transparent 30% ),'+
+                                        'url('+image.images.downsized.url+')' }"
+                                ></div>
+                                <h5 class='img_card_title text-white'>{{image.title}}</h5>
+                        </a>
+                    </div>
+                </div>
+         
+    </div>
+    
+
+    <script src="./bundle.js"></script>
+    <script src="https://use.fontawesome.com/62fceaacd3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/app.js"/> -->
+  </body>
+</html>
